@@ -7,10 +7,10 @@ export function TypeOrmConfig(): TypeOrmModuleOptions {
         host: DB_HOST,
         port: DB_PORT,
         username: DB_USERNAME,
-        database:DB_NAME,
+        database: DB_NAME,
         password: DB_PASSWORD,
-        autoLoadEntities: true,
-        synchronize: true,
+        autoLoadEntities: false,
+        synchronize: false,
         entities: [
             "dist/**/**/**/*.entity{.ts,.js}",
             "dist/**/**/*.entity{.ts,.js}",
